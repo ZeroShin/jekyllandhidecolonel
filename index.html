@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Zero | 이미지 다운로드</title>
     <link rel="stylesheet" href="src/style/style.css">
 </head>
-<body>
-    <h1>원하는 이미지 선택 및 다운로드</h1>
-    <select id="imageSelector">
-        <option value="src/assets/whoRU.png">너 뭐하는 색히야</option>
-        <option value="src/assets/10Chang.png">개 ㅅ창을 내버려</option>
-        <option value="src/assets/cantAngree.png">어유 화가 너무 안 풀려</option>
-        <option value="src/assets/dontKnow.png">알아 몰라</option>
-        <option value="src/assets/kindColonel.png">굉장히 인자한 대대장님</option>
-        <option value="src/assets/exactly.png">정확히 알고 있군</option>
-        <!-- 여기에 더 많은 이미지 옵션을 추가할 수 있습니다 -->
-    </select>
-    <br><br>
-    <img id="displayedImage" src="" alt="여기에 선택된 이미지가 표시됩니다" style="width: 100%; max-width: 600px; display: none;">
-    <br>
-    <button id="downloadButton" style="display: none;">이미지 다운로드</button>
 
-    <!-- <script src="script.js"></script> -->
+<body>
+    <div id="app">
+        <section>
+            <header>
+                <h1>원하는 이미지 선택 및 다운로드</h1>
+            </header>
+            <main>
+                <select id="imageSelector">
+                    <option value="src/assets/whoRU.png">너 뭐하는 색히야</option>
+                    <option value="src/assets/10Chang.png">개 ㅅ창을 내버려</option>
+                    <option value="src/assets/cantAngree.png">어유 화가 너무 안 풀려</option>
+                    <option value="src/assets/dontKnow.png">알아 몰라</option>
+                    <option value="src/assets/kindColonel.png">굉장히 인자한 대대장님</option>
+                    <option value="src/assets/exactly.png">정확히 알고 있군</option>
+                    <!-- 여기에 더 많은 이미지 옵션을 추가할 수 있습니다 -->
+                </select>
+                <div style="margin: 30px;">
+                    <img id="displayedImage" src="" alt="여기에 선택된 이미지가 표시됩니다"
+                    style="width: 100%; max-width: 600px; display: none;" class="center">
+                </div>
+                <div style="margin: 100px;" class="center">
+                    <button id="downloadButton" style="display: none;" class="center">이미지 다운로드</button>
+                </div>
+
+                <script src="src/js/script.js"></script>
+            </main>
+            <footer>
+
+            </footer>
+        </section>
+    </div>
 </body>
+
 </html>

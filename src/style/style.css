@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(40, 40, 40);
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+main{
+    text-align: center;
+}
+
+select{
+    height: 40px;
+}
+
+.center {
+    justify-content: center;
+}
+
+img{
+    margin: 0 auto;
+}
+
+button{
+    margin: 0 auto;
+}
